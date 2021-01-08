@@ -1,0 +1,722 @@
+@font-face {
+    font-family: 'Edmund-Free';
+    src: url("../fonts/Edmund-Free.eot");
+    src: url("../fonts/Edmund-Free.eot?#iefix") format("embedded-opentype"), url("../fonts/Edmund-Free.woff2") format("woff2"), url("../fonts/Edmund-Free.woff") format("woff"), url("../fonts/Edmund-Free.ttf") format("truetype"), url("../fonts/Edmund-Free.svg#Edmund-Free") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std 55 Roman';
+  src: url("../fonts/AvenirLTStd-Heavy.eot");
+  src: url("../fonts/AvenirLTStd-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTStd-Heavy.woff2") format("woff2"), url("../fonts/AvenirLTStd-Heavy.woff") format("woff"), url("../fonts/AvenirLTStd-Heavy.ttf") format("truetype"), url("../fonts/AvenirLTStd-Heavy.svg#AvenirLTStd-Heavy") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nixie One';
+  src: url("../fonts/NixieOne.eot");
+  src: url("../fonts/NixieOne.eot?#iefix") format("embedded-opentype"), url("../fonts/NixieOne.woff2") format("woff2"), url("../fonts/NixieOne.woff") format("woff"), url("../fonts/NixieOne.ttf") format("truetype"), url("../fonts/NixieOne.svg#NixieOne") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Edmund-Texture';
+  src: url("../fonts/Edmund-Texture.eot");
+  src: url("../fonts/Edmund-Texture.eot?#iefix") format("embedded-opentype"), url("../fonts/Edmund-Texture.woff2") format("woff2"), url("../fonts/Edmund-Texture.woff") format("woff"), url("../fonts/Edmund-Texture.ttf") format("truetype"), url("../fonts/Edmund-Texture.svg#Edmund-Texture") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std';
+  src: url("../fonts/AvenirLTStd-Light.eot");
+  src: url("../fonts/AvenirLTStd-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTStd-Light.woff2") format("woff2"), url("../fonts/AvenirLTStd-Light.woff") format("woff"), url("../fonts/AvenirLTStd-Light.ttf") format("truetype"), url("../fonts/AvenirLTStd-Light.svg#AvenirLTStd-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+    font-family: 'Nixie One';
+    background-image: url(../images/background-body.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.auto-container {
+    max-width: 1630px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+}
+
+.header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 17px;
+    position: relative;
+    z-index: 120;
+}
+
+.nav-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-right: 30px;
+}
+
+.nav-menu ul li {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.nav-menu ul li a {
+    font-size: 24px;
+    color: #272b1a;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.nav-menu ul li a::after {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 2px;
+    border-bottom: dotted 5px #ffffff;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.nav-menu ul li a:hover {
+    text-decoration: none;
+}
+
+.nav-menu ul li a:hover::after {
+    opacity: 1;
+}
+
+.nav-menu ul li:nth-child(3) a,
+    .nav-menu ul li:nth-child(4) a {
+    color: #d6b88f;
+}
+
+.nav-menu ul li.active a::after {
+    opacity: 1;
+}
+
+.header,
+.internal-page {
+    position: relative;
+}
+
+.header::after,
+  .internal-page::after {
+    position: absolute;
+    content: '';
+    width: 31%;
+    height: 100%;
+    background-color: #272b1a;
+    top: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.main-page {
+    position: relative;
+}
+
+.main-page .banner::after {
+    position: absolute;
+    content: '';
+    width: 31%;
+    height: 100%;
+    background-color: #272b1a;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.header-cart {
+    position: absolute;
+    top: 41%;
+    right: -98px;
+    transform: translateY(-50%);
+}
+
+.main-page .banner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, 10em);
+}
+
+.grid-large-image {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+
+.banner-image-large {
+    margin-right: -71px;
+    margin-bottom: -172px;
+}
+
+.banner-image-large img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.grid-small-image-1 {
+    grid-row-start: 4;
+    grid-column-start: 8;
+    grid-row-end: 6;
+    grid-column-end: 10;
+}
+
+.banner-image-small-1 {
+    padding-top: 28px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 8;
+}
+
+.grid-small-image-2 {
+    grid-row-start: 5;
+    grid-column-start: 9;
+    grid-column-end: 11;
+}
+
+.banner-image-small-2 {
+    padding-left: 20px;
+    position: relative;
+    z-index: 8;
+}
+
+.grid-banner-name {
+    grid-row-end: 3;
+    grid-row-start: 2;
+    grid-column-start: 7;
+    grid-column-end: 11;
+}
+
+.banner-name-restaurant {
+    position: relative;
+    z-index: 8;
+}
+
+.banner-name-restaurant h2 {
+    font-size: 197px;
+    color: #9f793b;
+    text-transform: uppercase;
+    font-family: 'Edmund-Texture';
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.banner-name-restaurant h5 {
+    font-size: 34px;
+    color: #efea17;
+    text-transform: uppercase;
+    font-family: 'Avenir LT Std 55 Roman';
+    text-align: right;
+    margin-top: -30px;
+    padding-right: 10px;
+}
+
+.social-media {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 162px;
+    left: 14%;
+}
+
+.social-media li {
+    transform: rotate(90deg);
+}
+
+.social-media li:not(:last-child) {
+    margin-bottom: 160px;
+}
+
+.social-media li:nth-child(3) {
+    margin-bottom: 112px;
+}
+
+.social-media li a {
+    font-size: 19px;
+    color: #d6b88f;
+    margin-bottom: 0;
+    font-family: 'Avenir LT Std 55 Roman';
+    position: relative;
+}
+
+.social-media li a:hover {
+    text-decoration: none;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-banner-social {
+    grid-column-start: 12;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.banner-social {
+    position: relative;
+    z-index: 8;
+}
+
+.grid-banner-btn {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.banner-btn--order {
+    margin-top: -35px;
+    position: relative;
+    z-index: 10;
+}
+
+.banner-btn--order a {
+    color: #efea17;
+    font-family: 'Avenir LT Std 55 Roman';
+    text-transform: uppercase;
+    font-size: 23px;
+    width: 230px;
+    height: 230px;
+    display: block;
+    text-align: center;
+    line-height: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+}
+
+.banner-btn--order a::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: dotted 3px #9f793b;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+
+.banner-btn--order a::before {
+    position: absolute;
+    content: '';
+    width: 215px;
+    height: 215px;
+    background-image: url(../images/btn-order-bg.png);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.banner-btn--order a:hover::after {
+    -webkit-animation: rotate 10s infinite linear;
+    -moz-animation: rotate 10s infinite linear;
+    -o-animation: rotate 10s infinite linear;
+    animation: rotate 10s infinite linear;
+    border: dotted 3px #272b1a;
+}
+
+.banner-btn--order a:hover {
+    color: #272b1a;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.grid-banner-comment {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+
+.header-nav__close {
+    display: none;
+}
+
+.banner-comment {
+    margin-left: 93px;
+    margin-right: -67px;
+    margin-top: -62px;
+}
+
+.banner-comment--text {
+    position: relative;
+    padding-top: 74px;
+    background-image: url(../images/icon-text.png);
+    background-size: 13%;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.banner-comment--text p {
+    font-size: 24px;
+    color: #191919;
+}
+
+.slide-btn {
+    width: 100%;
+    height: 70px;
+    background-color: #9f793b;
+    text-transform: uppercase;
+    color: #272b1a;
+    font-size: 23px;
+    font-family: 'Avenir LT Std 55 Roman';
+    text-align: center;
+    line-height: 70px;
+    grid-row: 6;
+    position: relative;
+    z-index: 10;
+    top: 31px;
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.slide-btn:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #191919;
+}
+
+.prev-btn {
+    grid-column: 1;
+}
+
+.next-btn {
+    grid-column: 12;
+}
+
+.favorites {
+    position: relative;
+    background-image: url(../images/f-bg.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    min-height: 1018px;
+    margin-top: -146px;
+    z-index: 10;
+}
+
+.favorites-slides--slide {
+    max-width: 381px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.favorites-title {
+    padding-top: 157px;
+}
+
+.favorites-title h3 {
+    font-size: 87px;
+    color: #ebd0ad;
+    text-transform: uppercase;
+    font-family: 'Edmund-Texture';
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.favorites .slick-dots {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    margin-top: 42px;
+}
+
+.favorites .slick-dots li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.favorites .slick-dots li.slick-active button {
+    height: 4px;
+}
+
+.favorites .slick-dots button {
+    border: none;
+    background-color: transparent;
+    font-size: 0;
+    width: 60px;
+    height: 2px;
+    background-color: #e2ccab;
+    outline: none;
+    cursor: pointer;
+}
+
+.favorites-slides {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.favorites-slides--silde-name h6 {
+    font-size: 26px;
+    color: #ebd0ad;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.favorites-slides--order-btn a {
+    width: 205px;
+    height: 70px;
+    display: block;
+    background-color: #272b1a;
+    text-align: center;
+    line-height: 70px;
+    font-size: 23px;
+    color: #efea17;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.favorites-slides--order-btn a:hover {
+    text-decoration: none;
+}
+
+.main-page .special {
+    margin-top: -75px;
+    position: relative;
+}
+
+.footer-info {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-info a,
+  .footer-info p {
+    color: #262626;
+    font-size: 21px;
+    margin-bottom: 0;
+}
+
+.button-mobile {
+    display: none;
+}
+
+.main-page .banner-mobile {
+    display: none;
+}
+
+.internal-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+}
+
+.internal-banner .internal-banner-photo {
+    width: 83.333%;
+    position: relative;
+    z-index: 8;
+}
+
+.internal-banner .banner-social {
+    width: 8.229%;
+}
+
+.internal-banner .social-media {
+    top: 29px;
+    left: 14%;
+}
+
+.internal-banner .social-media li {
+    text-align: center;
+}
+
+.internal-banner .social-media li:not(:last-child) {
+    margin-bottom: 82%;
+}
+
+.internal-page-wrap {
+    width: 83.333%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+}
+
+.special-wrap {
+    position: relative;
+}
+
+.special-wrap h3 {
+    font-size: 141px;
+    color: #ed2524;
+    font-family: 'Edmund-Texture';
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 65px;
+    background-image: url(../images/special-icon-1.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.special-wrap h3 span {
+    font-size: 230px;
+    line-height: 1;
+}
+
+.special-wrap h6 {
+    font-size: 42px;
+    color: #9f793b;
+    font-family: 'Nixie One';
+    text-transform: uppercase;
+    margin-top: -100px;
+    padding-left: 240px;
+}
+
+.special-wrap .special-image {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.internal-page-inner {
+    padding-top: 75px;
+    padding-bottom: 150px;
+}
+
+.order-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    bottom: 110px;
+}
+
+.order-button a {
+    width: 205px;
+    height: 70px;
+    background-color: #272b1a;
+    color: #efea17;
+    text-align: center;
+    line-height: 70px;
+    display: block;
+    font-size: 23px;
+    font-family: 'Avenir LT Std';
+}
+
+.order-button a:hover {
+    text-decoration: none;
+}
+
+.footer-internal {
+    background-image: url(../images/footer-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-top: -67px;
+    z-index: 10;
+    position: relative;
+}
+
+.footer-internal .footer-info {
+    padding-top: 110px;
+}
+
+.about-page .about-content {
+    width: 66.5%;
+}
+
+.about-page .about-photo {
+    width: 31%;
+}
+
+.about-page .about-content--row-content {
+    padding-right: 50px;
+}
+
+.about-page .about-content--row-content p {
+    font-size: 21px;
+    color: #262626;
+    line-height: 1.8;
+}
+
+.about-page .about-content--row-title h3 {
+    font-size: 35px;
+    color: #9f793b;
+    text-transform: uppercase;
+    font-family: 'Edmund-Texture';
+    margin-bottom: 17px;
+}
+
+.about-page .about-content--row-title.about-content--first-title h3 {
+    font-size: 61px;
+}
+
+.about-page .about-content--row {
+    margin-bottom: 50px;
+}
+
+.about-page .about-photo {
+    padding-top: 50px;
+}
+
+.about-page .about-photo .photo:first-child {
+    margin-bottom: 35px;
+}
+
+.about-page {
+    position: relative;
+    z-index: 7;
+}
+
+.about-page .internal-page-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

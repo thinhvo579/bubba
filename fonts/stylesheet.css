@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Edmund-Free';
+    src: url('Edmund-Free.eot');
+    src: url('Edmund-Free.eot?#iefix') format('embedded-opentype'), url('Edmund-Free.woff2') format('woff2'), url('Edmund-Free.woff') format('woff'), url('Edmund-Free.ttf') format('truetype'), url('Edmund-Free.svg#Edmund-Free') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std 55 Roman';
+    src: url('AvenirLTStd-Heavy.eot');
+    src: url('AvenirLTStd-Heavy.eot?#iefix') format('embedded-opentype'), url('AvenirLTStd-Heavy.woff2') format('woff2'), url('AvenirLTStd-Heavy.woff') format('woff'), url('AvenirLTStd-Heavy.ttf') format('truetype'), url('AvenirLTStd-Heavy.svg#AvenirLTStd-Heavy') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nixie One';
+    src: url('NixieOne.eot');
+    src: url('NixieOne.eot?#iefix') format('embedded-opentype'), url('NixieOne.woff2') format('woff2'), url('NixieOne.woff') format('woff'), url('NixieOne.ttf') format('truetype'), url('NixieOne.svg#NixieOne') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Edmund-Texture';
+    src: url('Edmund-Texture.eot');
+    src: url('Edmund-Texture.eot?#iefix') format('embedded-opentype'), url('Edmund-Texture.woff2') format('woff2'), url('Edmund-Texture.woff') format('woff'), url('Edmund-Texture.ttf') format('truetype'), url('Edmund-Texture.svg#Edmund-Texture') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('AvenirLTStd-Light.eot');
+    src: url('AvenirLTStd-Light.eot?#iefix') format('embedded-opentype'), url('AvenirLTStd-Light.woff2') format('woff2'), url('AvenirLTStd-Light.woff') format('woff'), url('AvenirLTStd-Light.ttf') format('truetype'), url('AvenirLTStd-Light.svg#AvenirLTStd-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
